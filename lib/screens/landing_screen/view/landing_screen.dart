@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dating_app/navigation/routes.gr.dart';
 import 'package:flutter_dating_app/screens/screens.dart';
 import 'package:flutter_dating_app/utils/utils.dart';
 
@@ -64,7 +65,6 @@ class LandingScreen extends StatelessWidget {
                           textStyle: Theme.of(context).textTheme.bodyLarge!.copyWith(
                                 color: AppTheme.grey,
                               ),
-                          containerColor: AppTheme.secondary,
                           borderColor: AppTheme.black,
                         ),
                         SizedBox(height: context.screenHeight * 0.01),
@@ -81,8 +81,8 @@ class LandingScreen extends StatelessWidget {
                           textStyle: Theme.of(context).textTheme.bodyLarge!.copyWith(
                                 color: AppTheme.black,
                               ),
-                          containerColor: AppTheme.secondary,
                           borderColor: AppTheme.black,
+                          onTap: () => context.pushRoute(const SignUpRoute()),
                         ),
                         SizedBox(height: context.screenHeight * 0.015),
                         RichText(
@@ -101,7 +101,7 @@ class LandingScreen extends StatelessWidget {
                                 ),
                                 TextSpan(
                                   text: ' Privacy Policy ',
-                                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: AppTheme.secondary),
+                                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: AppTheme.davysGrey),
                                 ),
                                 TextSpan(
                                   text: 'and',
@@ -109,7 +109,7 @@ class LandingScreen extends StatelessWidget {
                                 ),
                                 TextSpan(
                                   text: ' Cookies Policy',
-                                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: AppTheme.secondary),
+                                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: AppTheme.davysGrey),
                                 ),
                                 TextSpan(
                                   text: '.',
