@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// this is the theme file all over the app. All the colors, text styles, font families, font weights etc are defined here
+
 class AppTheme {
   const AppTheme();
 
@@ -12,9 +14,14 @@ class AppTheme {
 
   // grey shades
   static const Color grey = Colors.grey;
+  static const Color quartz = Color(0xFF4C4C4C);
+  static const Color spanishGray = Color(0xFF9A9A9A);
 
   // blue shades
   static const Color davysGrey = Color(0xFF5C4C5A);
+
+  // red shades
+  static const Color red = Colors.red;
 
   // theme data
   static ThemeData getAppThemeData() => ThemeData(
